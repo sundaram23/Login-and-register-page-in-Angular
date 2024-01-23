@@ -1,0 +1,28 @@
+<form id="form" [formGroup]="signForm" (ngSubmit)="onSubmit()">
+    <div class="form-control">
+        <label for="name" id="label-name">UserName :</label><br>
+        <input type="text" id="name" placeholder="Enter your name" formControlName="username"/><br>
+        <label for="password" id="label-name">FirstName :</label>
+        <input type="text"id="firstname"placeholder="Enter your name" formControlName="firstname"/> <br>
+        <label for="password" id="label-name">LastName :</label>
+        <input type="text"id="lastname"placeholder="Enter your name" formControlName="lastname"/> <br>
+        <label for="password" id="label-name">Password :</label>
+        <input type="password"id="pass"placeholder="Enter your password" formControlName="password"/> <br>
+        <label for="password" id="label-name">Confirm Password :</label>
+        <input type="password"id="cpass"placeholder="Enter your password" formControlName="cpassword"/> <br>
+        <button type="submit">Sign Up</button>
+        <a class="sign-but" routerLink="/login">Login</a>
+    </div>
+    </form>
+                    <!-- 
+    <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+        <label for="username">Username:</label>
+        <input type="text" id="username" formControlName="username">
+      
+        <label for="password">Password:</label>
+        <input type="password" id="password" formControlName="password">
+      
+        <button type="submit" [disabled]="!loginForm.valid">Login</button>
+      </form> -->
+      
+        
